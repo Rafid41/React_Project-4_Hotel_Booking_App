@@ -48,7 +48,7 @@ class Main extends Component {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/logout" element={<Logout />} />
-                   
+
                     {/* kono kisur sathe match na hole "/" */}
                     <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
@@ -59,7 +59,7 @@ class Main extends Component {
                 <Header />
 
                 {/* container class left right kisu padding dey */}
-                <div className="container">{routes}</div>
+                <div>{routes}</div>
             </div>
         );
     }

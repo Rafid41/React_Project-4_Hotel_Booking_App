@@ -31,14 +31,14 @@ const Header = (props) => {
             <Nav className="mr-md-5">
                 <NavItem>
                     <NavLink to="/" className="NavLink">
-                        All Photos
+                        <img src="img/hotel_logo.png" height="50px" />
                     </NavLink>
                 </NavItem>
-                <NavItem>
+                {/* <NavItem>
                     <NavLink to="/album" className="NavLink">
                         Albums
                     </NavLink>
-                </NavItem>
+                </NavItem> */}
                 <NavItem className="ml-auto">
                     <NavLink to="/logout" className="NavLink">
                         Logout
@@ -48,11 +48,11 @@ const Header = (props) => {
         );
     }
     return (
-        <div className="Navigation">
+        <div className="Navigation" style={{ marginBottom: 0 }}>
             <Navbar
                 style={{
-                    backgroundColor: "#D70F64",
-                    height: "70px",
+                    backgroundColor: "#8034eb",
+                    height: "100px",
                 }}
             >
                 {/* mr == margin-right, ml==margin-left, md=medium screen */}
