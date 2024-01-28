@@ -51,7 +51,7 @@ class Main extends Component {
 
                     {/* kono kisur sathe match na hole "/" */}
                     <Route path="*" element={<Navigate to="/" replace />} />
-                    <Route path="/room/:type" element={<Room />} />
+                    <Route path="/room/:type/:price" element={<Room />} />
                 </Routes>
             );
         }

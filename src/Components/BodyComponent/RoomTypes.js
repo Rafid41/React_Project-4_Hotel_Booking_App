@@ -23,7 +23,7 @@ class RoomTypes extends Component {
                     <h2 style={{ color: "white" }}>Select Room Types</h2>
 
                     <div className="types_btn_div">
-                        <Link to={`/room/${"single"}`}>
+                        <Link to={`/room/${"single"}/5000`}>
                             <Button
                                 color="warning"
                                 outline
@@ -35,7 +35,7 @@ class RoomTypes extends Component {
                                 <h3 className="types_h3">Single Room</h3>
                             </Button>
                         </Link>
-                        <Link to={`/room/${"double"}`}>
+                        <Link to={`/room/${"double"}/8000`}>
                             <Button
                                 color="warning"
                                 outline
@@ -47,7 +47,7 @@ class RoomTypes extends Component {
                                 <h3 className="types_h3">Double Room</h3>
                             </Button>
                         </Link>
-                        <Link to={`/room/${"family"}`}>
+                        <Link to={`/room/${"family"}/12000`}>
                             <Button
                                 color="warning"
                                 outline
@@ -59,7 +59,7 @@ class RoomTypes extends Component {
                                 <h3 className="types_h3">Family Room</h3>
                             </Button>
                         </Link>
-                        <Link to={`/room/${"deluxe"}`}>
+                        <Link to={`/room/${"deluxe"}/20000`}>
                             <Button
                                 color="warning"
                                 outline
