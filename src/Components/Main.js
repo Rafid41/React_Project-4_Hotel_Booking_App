@@ -7,9 +7,8 @@ import { connect } from "react-redux";
 import { authCheck } from "../redux/authActionCreators";
 import Logout from "./Auth/Logout";
 import Home from "./BodyComponent/Home";
-// import Album from "./BodyComponent/Album";
-// import EachAlbum from "./BodyComponent/EachAlbum";
-// import Comments from "./BodyComponent/Comments/Comments";
+import RoomTypes from "./BodyComponent/RoomTypes";
+import Room from "./BodyComponent/Room";
 
 const mapStateToProps = (state) => {
     return {
@@ -46,11 +45,13 @@ class Main extends Component {
         } else {
             routes = (
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route exact path="/" element={<Home />} />
                     <Route path="/logout" element={<Logout />} />
+                    <Route path="/room_types" element={<RoomTypes />} />
 
                     {/* kono kisur sathe match na hole "/" */}
                     <Route path="*" element={<Navigate to="/" replace />} />
+                    <Route path="/room/:type" element={<Room />} />
                 </Routes>
             );
         }

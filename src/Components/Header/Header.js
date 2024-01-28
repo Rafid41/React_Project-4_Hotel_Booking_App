@@ -52,7 +52,7 @@ const Header = (props) => {
             <Navbar
                 style={{
                     backgroundColor: "#8034eb",
-                    height: "100px",
+                    height: "10vh",
                 }}
             >
                 {/* mr == margin-right, ml==margin-left, md=medium screen */}

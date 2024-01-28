@@ -14,3 +14,30 @@
     margin: 17px;
     border: 2px solid black;
 }
+
+.types_h3 {
+    font-family: Pacifico;
+    font-weight: bold;
+}
+
+.types_btn_div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.centered-div {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Set height to viewport height */
+}
+
+.home_h3_btn {
+    color: #08096e;
+    font-family: Pacifico;
+    font-weight: bold;
+}
+
+.home_h3_btn:hover {
+    color: white;
+}

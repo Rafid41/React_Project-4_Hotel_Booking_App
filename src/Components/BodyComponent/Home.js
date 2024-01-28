@@ -1,6 +1,7 @@
 // src\Components\BodyComponent\Home.js
 import React, { Component } from "react";
 import { Button } from "reactstrap";
+import { Link } from "react-router-dom";
 import "../../App.css";
 
 class Home extends Component {
@@ -39,23 +40,20 @@ class Home extends Component {
                     <div className="container photo-grid">
                         <img src="img/f1.jpg" alt="Photo 1" />
                         <img src="img/f2.jpg" alt="Photo 2" />
-                        {/* <img src="img/f3.jpg" alt="Photo 3" /> */}
                         <img src="img/f4.jpg" alt="Photo 3" />
                         <img src="img/f5.jpg" alt="Photo 3" />
                     </div>
                     <br />
                     <br />
-                    <Button color="warning">
-                        <h3
-                            style={{
-                                color: "#08096e",
-                                fontFamily: "Pacifico",
-                                fontWeight: "bold",
-                            }}
-                        >
-                            Click here to Book Now
-                        </h3>
-                    </Button>
+                    <Link to={`/room_types/`}>
+                        <Button color="warning">
+                            <h3 className="home_h3_btn">
+                                Click here to Book Now
+                            </h3>
+                        </Button>
+                    </Link>
+                    <br />
+                    <br />
                 </div>
             </div>
         );
