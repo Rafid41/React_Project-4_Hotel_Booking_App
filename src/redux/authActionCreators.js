@@ -52,7 +52,7 @@ export const auth = (email, password, mode) => (dispatch) => {
     // this is default link for post
     // API key from Firebase -> settings -> project settings-> web API Key
     let error = false;
-    const API_KEY = "AIzaSyCUp5sxjU5pF7T0Ub2YAR4Mv_I_xnqDTNo";
+    const API_KEY = "AIzaSyBhlsTIXSCqk2tz44metHbQyD_vGan25qw";
     axios
         .post(authUrl + API_KEY, authData)
         .then((response) => {
@@ -76,8 +76,6 @@ export const auth = (email, password, mode) => (dispatch) => {
             dispatch(authFailed(err.response.data.error.message));
             error = true;
         });
-
-
 
     // set email to local storage
     localStorage.setItem("email", email);

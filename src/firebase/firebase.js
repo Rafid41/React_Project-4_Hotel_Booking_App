@@ -1,24 +1,23 @@
-// src\firebase\firebase.js
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";
+import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyCUp5sxjU5pF7T0Ub2YAR4Mv_I_xnqDTNo",
-  authDomain: "react-hotel-booking-app.firebaseapp.com",
-  databaseURL: "https://react-hotel-booking-app-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "react-hotel-booking-app",
-  storageBucket: "react-hotel-booking-app.appspot.com",
-  messagingSenderId: "366408645792",
-  appId: "1:366408645792:web:5be0972cf850de9dee1dc5"
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+export const firebaseConfig = {
+    apiKey: "AIzaSyBhlsTIXSCqk2tz44metHbQyD_vGan25qw",
+    authDomain: "hotel-booking-react-9799e.firebaseapp.com",
+    databaseURL:
+        "https://hotel-booking-react-9799e-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "hotel-booking-react-9799e",
+    storageBucket: "hotel-booking-react-9799e.appspot.com",
+    messagingSenderId: "955388546917",
+    appId: "1:955388546917:web:f13bcde3e1dd3e2e4a9b8c",
+    measurementId: "G-R3NN2G282E",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-// realtime database
-export const database = getDatabase(app);
+const analytics = getAnalytics(app);
